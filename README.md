@@ -28,6 +28,8 @@ A modern, responsive single-page application (SPA) built with React for managing
 
 ## 📦 Installation & Setup
 
+### Local Development
+
 1. **Clone the repository**
    ```bash
    git clone <your-repo-url>
@@ -49,6 +51,25 @@ A modern, responsive single-page application (SPA) built with React for managing
    ```bash
    npm run dev
    ```
+   This will start the React app on `http://localhost:5173`
+
+### 🌐 Deploy to Vercel
+
+This project is ready for deployment on Vercel with a serverless API backend:
+
+1. **Quick Deploy** - Click the button below:
+   [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/react-phase2-spa-project)
+
+2. **Manual Deployment**:
+   - Push your code to GitHub
+   - Go to [vercel.com](https://vercel.com) and import your repository
+   - The app will automatically deploy with both frontend and API
+
+3. **After Deployment**:
+   - Update `src/config/api.js` with your Vercel URL
+   - Commit and push for automatic redeployment
+
+📖 **Detailed deployment guide**: See [DEPLOYMENT.md](./DEPLOYMENT.md)
    This will start the React app on `http://localhost:5173`
 
 ## 🔧 Available Scripts

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import TaskItem from './TaskItem';
+import { API_BASE_URL } from '../config/api';
 import './TaskList.css';
 
 function TaskList() {
@@ -14,7 +15,7 @@ function TaskList() {
 
   const fetchTasks = async () => {
     try {
-      const response = await fetch('http://localhost:3001/tasks');
+      const response = await fetch(`${API_BASE_URL}/tasks`);
       if (!response.ok) {
         throw new Error('Failed to fetch tasks');
       }
@@ -29,7 +30,7 @@ function TaskList() {
 
   const toggleTask = async (id, currentStatus) => {
     try {
-      const response = await fetch(`http://localhost:3001/tasks/${id}`, {
+      const response = await fetch(`${API_BASE_URL}/tasks/${id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -51,7 +52,7 @@ function TaskList() {
 
   const deleteTask = async (id) => {
     try {
-      const response = await fetch(`http://localhost:3001/tasks/${id}`, {
+      const response = await fetch(`${API_BASE_URL}/tasks/${id}`, {
         method: 'DELETE',
       });
       

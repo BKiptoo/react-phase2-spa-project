@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { API_BASE_URL } from '../config/api';
 import "./TaskForm.css";
 
 function TaskForm({ onTaskAdded }) {
@@ -37,7 +38,7 @@ function TaskForm({ onTaskAdded }) {
       };
 
       // POST request to add new task
-      const response = await fetch("http://localhost:3001/tasks", {
+      const response = await fetch(`${API_BASE_URL}/tasks`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
