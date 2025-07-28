@@ -2,7 +2,6 @@ import { useState } from 'react'
 import Header from './components/Header'
 import TaskList from './components/TaskList'
 import TaskForm from './components/TaskForm'
-import Footer from './components/Footer'
 import './App.css'
 
 function App() {
@@ -20,7 +19,7 @@ function App() {
         <TaskForm onTaskAdded={handleTaskAdded} />
         <TaskList key={refreshTasks} />
       </main>
-      <Footer />
+      
     </div>
   )
 }
