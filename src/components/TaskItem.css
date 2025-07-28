@@ -1,0 +1,146 @@
+.task-item {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  border-left: 4px solid transparent;
+}
+
+.task-item.completed {
+  opacity: 0.7;
+  background-color: #f8f9fa;
+}
+
+.priority-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  border-radius: 12px 0 0 12px;
+}
+
+.task-content {
+  margin-left: 1rem;
+  flex: 1;
+}
+
+.task-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.4;
+}
+
+.task-item.completed .task-title {
+  text-decoration: line-through;
+  color: #7f8c8d;
+}
+
+.task-description {
+  color: #5d6d7e;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+}
+
+.task-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.priority-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+}
+
+.priority-badge.priority-high {
+  background-color: #e74c3c;
+}
+
+.priority-badge.priority-medium {
+  background-color: #f39c12;
+}
+
+.priority-badge.priority-low {
+  background-color: #27ae60;
+}
+
+.task-date {
+  font-size: 0.85rem;
+  color: #95a5a6;
+  font-weight: 500;
+}
+
+.task-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.toggle-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-btn.pending {
+  background-color: #ecf0f1;
+  color: #bdc3c7;
+  border: 2px solid #bdc3c7;
+}
+
+.toggle-btn.pending:hover {
+  background-color: #27ae60;
+  color: white;
+  border-color: #27ae60;
+}
+
+.toggle-btn.completed {
+  background-color: #27ae60;
+  color: white;
+  border: 2px solid #27ae60;
+}
+
+.toggle-btn.completed:hover {
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+}
+
+.delete-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: #e74c3c;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+  transform: scale(1.1);
+}
