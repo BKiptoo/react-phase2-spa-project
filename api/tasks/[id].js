@@ -1,4 +1,30 @@
-import { tasks } from '../data.js';
+// Simple tasks data
+const tasks = [
+  {
+    "id": 1,
+    "title": "Learn React Hooks",
+    "description": "Study useState, useEffect, and other React hooks",
+    "completed": false,
+    "priority": "high",
+    "createdAt": "2025-01-15"
+  },
+  {
+    "id": 2,
+    "title": "Build REST API",
+    "description": "Create a RESTful API using json-server",
+    "completed": true,
+    "priority": "medium",
+    "createdAt": "2025-01-16"
+  },
+  {
+    "id": 3,
+    "title": "Style Components",
+    "description": "Add custom CSS styling to all components",
+    "completed": false,
+    "priority": "low",
+    "createdAt": "2025-01-17"
+  }
+];
 
 let taskStorage = [...tasks];
 
