@@ -6,8 +6,17 @@ A modern, responsive single-page application (SPA) built with React for managing
 
 ✅ **Single Page Application (SPA)** - Built with React using only one `index.html` file  
 ✅ **5 React Components** - Header, TaskList, TaskItem, TaskForm, and Footer  
-✅ **RESTful API** - Uses json-server with GET and POST operations  
+✅ **RESTful API** - Deployed serverless API with GET and POST operations  
 ✅ **Custom CSS Styling** - Beautiful, responsive design with custom CSS  
+
+## 🌐 Live Demo
+
+**🚀 App URL**: https://react-phase2-spa-project.vercel.app/  
+**🔗 API Endpoints**:
+- GET https://react-phase2-spa-project.vercel.app/api/tasks
+- POST https://react-phase2-spa-project.vercel.app/api/tasks  
+- PATCH https://react-phase2-spa-project.vercel.app/api/tasks/[id]
+- DELETE https://react-phase2-spa-project.vercel.app/api/tasks/[id]  
 
 ## 🚀 Features
 
