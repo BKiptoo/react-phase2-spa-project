@@ -1,61 +1,43 @@
-# Task Manager Pro
+# TaskMate
 
-A simple React-based task management application.
+A simple task management app built with React.
 
 ## Features
 
-- Create, view, update, and delete tasks
-- Task priority system (High, Medium, Low)
+- Add new tasks
 - Mark tasks as complete/incomplete
-- Responsive design
-
-## Technologies
-
-- React 19
-- Vite
-- JSON Server
-- Custom CSS
+- Delete tasks
+- View all tasks
 
 ## Getting Started
 
-1. Clone the repository:
-   ```bash
-   git clone <your-repo-url>
-   cd react-phase2-spa-project
-   ```
-
-2. Install dependencies:
+1. Install dependencies:
    ```bash
    npm install
    ```
 
-3. Start the JSON server:
+2. Start the JSON server (backend):
    ```bash
    npm run server
    ```
 
-4. Start the development server:
+3. In a new terminal, start the React app:
    ```bash
-   npm run dev
+   npm start
    ```
 
-5. Open your browser to `http://localhost:5173`
+4. Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-## Available Scripts
+## Tech Stack
 
-- `npm run dev` - Start development server
-- `npm run server` - Start JSON server API
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
+- React
+- React Router
+- JSON Server (for backend API)
+- CSS for styling
 
-## Project Structure
+## API Endpoints
 
-- `src/components/` - React components
-- `src/config/` - API configuration
-- `api/` - Serverless API functions
-- `db.json` - JSON database
-
-## Author
-
-Bettson Kiptoo
+- `GET /tasks` - Get all tasks
+- `POST /tasks` - Create a new task
+- `PATCH /tasks/:id` - Update a task
+- `DELETE /tasks/:id` - Delete a task
